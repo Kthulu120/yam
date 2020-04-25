@@ -1,3 +1,5 @@
+import 'package:app/screens/discover_screen.dart';
+import 'package:app/util/consts.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
       routes: {
-
-      }
+        HOME_ROUTE: (BuildContext context) => DiscoverScreen(),
+      },
     );
   }
 }
